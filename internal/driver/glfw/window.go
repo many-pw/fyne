@@ -874,12 +874,10 @@ func (w *window) keyPressed(viewport *glfw.Window, key glfw.Key, scancode int, a
 			if action != glfw.Release {
 				w.canvas.focusMgr.FocusNext(w.canvas.focused)
 			}
-			return
 		} else if keyDesktopModifier == desktop.ShiftModifier {
 			if action != glfw.Release {
 				w.canvas.focusMgr.FocusPrevious(w.canvas.focused)
 			}
-			return
 		}
 	}
 	if action == glfw.Press {
